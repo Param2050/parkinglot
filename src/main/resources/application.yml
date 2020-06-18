@@ -1,0 +1,15 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /parkinglot
+
+
+
+spring:
+  data:
+    mongodb:
+      database: test_db
+      port: 27017
+      host: localhost
+      repositories:
+        enabled: true
