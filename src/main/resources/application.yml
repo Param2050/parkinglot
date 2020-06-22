@@ -8,7 +8,7 @@ server:
 spring:
   data:
     mongodb:
-      database: test_db
+      database: PARAM_NET
       port: 27017
       host: localhost
       repositories:
