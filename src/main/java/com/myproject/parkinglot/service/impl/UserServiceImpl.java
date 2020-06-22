@@ -18,12 +18,12 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
 
-
     @Override
     public User createUser(UserDto userDto) {
         User user = new User();
         user.setUserId(UUID.randomUUID());
         user.setUserName(userDto.getUserName());
+        user.setPassword(userDto.getPassword());
         user.setEmail(userDto.getEmail());
         user.setMobile(userDto.getMobile());
         user.setAddress(userDto.getAddress());
